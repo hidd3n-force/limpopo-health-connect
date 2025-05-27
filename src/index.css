@@ -160,7 +160,7 @@
   }
 
   .flex-row {
-    @apply flex flex-row items-center justify-between;
+    @apply flex items-center justify-between;
   }
 
   .span {
