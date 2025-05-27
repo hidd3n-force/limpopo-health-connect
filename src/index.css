@@ -6,43 +6,43 @@
 @layer base {
   :root {
     --background: 248 250 252;
-    --foreground: 15 23 42;
+    --foreground: 51 65 85;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 51 65 85;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 51 65 85;
 
-    --primary: 45 121 243;
+    --primary: 34 197 94;
     --primary-foreground: 255 255 255;
 
-    --secondary: 100 116 139;
+    --secondary: 59 130 246;
     --secondary-foreground: 255 255 255;
 
-    --muted: 248 250 252;
+    --muted: 241 245 249;
     --muted-foreground: 100 116 139;
 
-    --accent: 248 250 252;
-    --accent-foreground: 15 23 42;
+    --accent: 240 253 244;
+    --accent-foreground: 22 163 74;
 
     --destructive: 239 68 68;
     --destructive-foreground: 255 255 255;
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 45 121 243;
+    --ring: 34 197 94;
 
     --radius: 0.5rem;
 
     --sidebar-background: 255 255 255;
-    --sidebar-foreground: 15 23 42;
-    --sidebar-primary: 45 121 243;
+    --sidebar-foreground: 51 65 85;
+    --sidebar-primary: 34 197 94;
     --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 248 250 252;
-    --sidebar-accent-foreground: 15 23 42;
+    --sidebar-accent: 240 253 244;
+    --sidebar-accent-foreground: 22 163 74;
     --sidebar-border: 226 232 240;
-    --sidebar-ring: 45 121 243;
+    --sidebar-ring: 34 197 94;
   }
 
   .dark {
@@ -55,33 +55,33 @@
     --popover: 30 41 59;
     --popover-foreground: 248 250 252;
 
-    --primary: 99 102 241;
-    --primary-foreground: 248 250 252;
+    --primary: 34 197 94;
+    --primary-foreground: 15 23 42;
 
-    --secondary: 71 85 105;
+    --secondary: 59 130 246;
     --secondary-foreground: 248 250 252;
 
     --muted: 30 41 59;
     --muted-foreground: 148 163 184;
 
-    --accent: 30 41 59;
-    --accent-foreground: 248 250 252;
+    --accent: 6 78 59;
+    --accent-foreground: 34 197 94;
 
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
 
     --border: 71 85 105;
     --input: 71 85 105;
-    --ring: 99 102 241;
+    --ring: 34 197 94;
     
     --sidebar-background: 15 23 42;
     --sidebar-foreground: 248 250 252;
-    --sidebar-primary: 99 102 241;
-    --sidebar-primary-foreground: 248 250 252;
-    --sidebar-accent: 30 41 59;
-    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-primary: 34 197 94;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 6 78 59;
+    --sidebar-accent-foreground: 34 197 94;
     --sidebar-border: 71 85 105;
-    --sidebar-ring: 99 102 241;
+    --sidebar-ring: 34 197 94;
   }
 }
 
@@ -91,7 +91,7 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-900;
+    @apply bg-slate-50 text-slate-700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -110,7 +110,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #2d79f3;
+    background: #22c55e;
     border-radius: 3px;
   }
 }
@@ -121,11 +121,11 @@
   }
   
   .healthcare-button-primary {
-    @apply bg-blue-600 text-white rounded-xl h-12 px-6 font-medium hover:bg-blue-700 transition-all duration-200 active:scale-95;
+    @apply bg-green-500 text-white rounded-xl h-12 px-6 font-medium hover:bg-green-600 transition-all duration-200 active:scale-95;
   }
   
   .healthcare-button-secondary {
-    @apply border-2 border-blue-600 text-blue-600 bg-transparent rounded-xl h-12 px-6 font-medium hover:bg-blue-600 hover:text-white transition-all duration-200 active:scale-95;
+    @apply border-2 border-green-500 text-green-600 bg-transparent rounded-xl h-12 px-6 font-medium hover:bg-green-500 hover:text-white transition-all duration-200 active:scale-95;
   }
   
   .healthcare-search-bar {
@@ -140,7 +140,7 @@
   }
 
   .flex-column > label {
-    @apply text-slate-800 font-semibold mb-2;
+    @apply text-slate-700 font-semibold mb-2;
   }
 
   .inputForm {
@@ -148,7 +148,7 @@
   }
 
   .inputForm:focus-within {
-    @apply border-blue-600;
+    @apply border-green-500;
   }
 
   .input {
@@ -164,24 +164,24 @@
   }
 
   .span {
-    @apply text-sm text-blue-600 font-medium cursor-pointer hover:text-blue-700;
+    @apply text-sm text-green-600 font-medium cursor-pointer hover:text-green-700;
   }
 
   .button-submit {
-    @apply mt-5 mb-3 bg-slate-800 border-none text-white text-sm font-medium rounded-xl h-12 w-full cursor-pointer hover:bg-slate-700 transition-colors;
+    @apply mt-5 mb-3 bg-slate-700 border-none text-white text-sm font-medium rounded-xl h-12 w-full cursor-pointer hover:bg-slate-800 transition-colors;
   }
 
   .p {
-    @apply text-center text-slate-800 text-sm my-1;
+    @apply text-center text-slate-700 text-sm my-1;
   }
 
   .btn {
-    @apply mt-3 w-full h-12 rounded-xl flex justify-center items-center font-medium gap-3 border border-slate-200 bg-white cursor-pointer transition-all duration-200 hover:border-blue-600;
+    @apply mt-3 w-full h-12 rounded-xl flex justify-center items-center font-medium gap-3 border border-slate-200 bg-white cursor-pointer transition-all duration-200 hover:border-green-500;
   }
 
   /* Weather Card Styles */
   .weather-card {
-    @apply relative p-6 bg-gradient-to-br from-yellow-100 to-white rounded-3xl cursor-pointer transition-all duration-500;
+    @apply relative p-6 bg-gradient-to-br from-green-50 to-white rounded-3xl cursor-pointer transition-all duration-500;
     width: 300px;
     height: 200px;
     box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1);
@@ -250,7 +250,7 @@
     @apply absolute rounded-full;
     width: 120px;
     height: 120px;
-    background: linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fbbf24, #fcd34d);
   }
 
   .sunshine {
@@ -262,16 +262,16 @@
   }
 
   .card-header span:first-child {
-    @apply font-bold text-sm text-amber-800 opacity-70;
+    @apply font-bold text-sm text-slate-600 opacity-70;
     word-break: break-all;
   }
 
   .card-header span:last-child {
-    @apply font-bold text-sm text-amber-800 opacity-50;
+    @apply font-bold text-sm text-slate-500 opacity-50;
   }
 
   .temp {
-    @apply absolute left-6 bottom-3 font-bold text-5xl text-amber-900;
+    @apply absolute left-6 bottom-3 font-bold text-5xl text-slate-700;
   }
 
   .temp-scale {
@@ -279,7 +279,7 @@
   }
 
   .temp-scale span {
-    @apply font-bold text-xs text-amber-800 opacity-70;
+    @apply font-bold text-xs text-slate-600 opacity-70;
   }
 
   /* Advertisement Card Styles */
@@ -313,7 +313,7 @@
   }
 
   .ad-title {
-    @apply font-bold text-lg text-slate-900 mb-2;
+    @apply font-bold text-lg text-slate-700 mb-2;
   }
 
   .ad-description {
@@ -321,7 +321,7 @@
   }
 
   .ad-cta {
-    @apply bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors;
+    @apply bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600 transition-colors;
   }
 }
 
