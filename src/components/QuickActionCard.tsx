@@ -10,16 +10,16 @@ export const QuickActionCard = ({ title, icon, onClick, variant = 'primary' }: Q
   return (
     <button
       onClick={onClick}
-      className={`healthcare-card flex items-center justify-center flex-col p-6 text-center transition-all duration-200 hover:shadow-lg active:animate-scale-press ${
+      className={`modern-card flex items-center justify-center flex-col p-6 text-center transition-all duration-200 hover:scale-105 active:scale-95 ${
         variant === 'primary' 
-          ? 'bg-primary text-white' 
-          : 'bg-card-bg text-text-primary hover:bg-gray-50'
+          ? 'bg-blue-600 text-white' 
+          : 'bg-white text-slate-900 border border-slate-200'
       }`}
     >
       <div className="mb-3 text-2xl">
         {icon}
       </div>
-      <span className="text-healthcare-body font-medium">{title}</span>
+      <span className="text-sm font-medium">{title}</span>
     </button>
   );
 };
